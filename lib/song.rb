@@ -9,7 +9,6 @@ class Song
     @name = song_name 
     @artist = artist
     @genre = genre
-    
     @@count += 1
     @@genres << genre
     @@artists << artist
@@ -38,5 +37,4 @@ class Song
     @@artists.each {|artist| artist_count[artist] += 1}
     artist_count
   end 
- 
 end 
